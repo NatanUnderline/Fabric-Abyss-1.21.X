@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "abyss",
+	"version": "${version}",
+	"name": "Abyss",
+	"description": "The Abyss approaches.",
+	"authors": [
+		"NatanUnderline"
+	],
+	"contact": {
+		"homepage": "https://net.natanunderline/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/abyss/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.natanunderline.abyss.Abyss"
+		],
+		"fabric-datagen": [
+			"net.natanunderline.abyss.AbyssDataGenerator"
+		],
+		"client": [
+			"net.natanunderline.abyss.AbyssClient"
+		]
+	},
+	"mixins": [
+		"abyss.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
